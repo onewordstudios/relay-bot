@@ -68,7 +68,7 @@ slackBot.on("message", (data) => {
 	
 	discordBot.sendMessage({
 		to: discordChannel,
-		message: `=\n${user}:\n${data.text}`
+		message: `**${user}**:\n${data.text}`
 	});
 });
 
