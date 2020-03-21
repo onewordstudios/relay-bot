@@ -4,7 +4,7 @@
 	"description": "Relays messages between Discord and Slack",
 	"main": "server.js",
 	"engines": {
-		"node": ">=0.12"
+		"node": ">=12"
 	},
 	"author": "Michael Xing",
 	"dependencies": {
