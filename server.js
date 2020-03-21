@@ -77,9 +77,11 @@ discordBot.on('message', function (user, userID, channelID, message, evt) {
 	if(channelID !== discordChannel) { return; }
 	if(userID === discordBot.id) { return; }
 	
+	const userName = discordBot.servers[discordBot.channels[channelID].guild_id].members[userID].nick;
+	
 	slackBot.postMessageToChannel(
         slackChannel,
-        `*${user}*\n${message}`,
+        `*${userName ? userName : user}*\n${message}`,
         {}
     );
 });
