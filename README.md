@@ -1,2 +1,3 @@
-# relay-bot
-Relays messages between Discord and Slack
+# Discord ↔️ Slack Relay Bot
+
+Relays messages between our Discord and Slack channels.
